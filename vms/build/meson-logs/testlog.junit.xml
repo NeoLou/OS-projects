@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites tests="14" errors="0" failures="0"><testsuite name="vms" tests="14" errors="0" failures="0" skipped="0" time="0.18703699111938477"><testcase name="copy-1" classname="vms" time="0.18703699111938477" /><testcase name="copy-2" classname="vms" time="0.17418646812438965" /><testcase name="copy-3" classname="vms" time="0.15665912628173828"><system-out>Fatal page fault!
+  Virtual address: 0xABF321
+  Page table: 0x7FE32E63E000
+  Level: 0
+  PTE:
+    PPN: 0x7FE32E642
+    Flags: --RV</system-out></testcase><testcase name="copy-4" classname="vms" time="0.1425461769104004" /><testcase name="copy-5" classname="vms" time="0.12986230850219727"><system-out>Fatal page fault!
+  Virtual address: 0xABB123
+  Page table: 0x7FD829838000
+  Level: 0
+  PTE:
+    PPN: 0x0
+    Flags: ----</system-out></testcase><testcase name="cow-1" classname="vms" time="0.11703109741210938" /><testcase name="cow-2" classname="vms" time="0.10905575752258301" /><testcase name="cow-3" classname="vms" time="0.09622955322265625"><system-out>Fatal page fault!
+  Virtual address: 0xABF321
+  Page table: 0x7EFDD6057000
+  Level: 0
+  PTE:
+    PPN: 0x7EFDD6054
+    Flags: --RV</system-out></testcase><testcase name="cow-4" classname="vms" time="0.08576798439025879" /><testcase name="cow-5" classname="vms" time="0.07638883590698242" /><testcase name="cow-6" classname="vms" time="0.06350159645080566" /><testcase name="cow-7" classname="vms" time="0.05046963691711426"><system-out>Fatal page fault!
+  Virtual address: 0xABB123
+  Page table: 0x7FCBF21CE000
+  Level: 0
+  PTE:
+    PPN: 0x0
+    Flags: ----</system-out></testcase><testcase name="cow-8" classname="vms" time="0.039855241775512695" /><testcase name="cow-9" classname="vms" time="0.03151583671569824" /></testsuite></testsuites>

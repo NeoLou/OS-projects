@@ -1,0 +1,110 @@
+Log of Meson test suite run on 2023-03-25T22:23:35.014045
+
+Inherited environment: SHELL=/bin/bash COLORTERM=truecolor TERM_PROGRAM_VERSION=1.76.2 HOSTNAME=68db3d04fcb3 SSH_AUTH_SOCK=/tmp/vscode-ssh-auth-c6a6a816-654c-436c-8635-6ecd97d1cd79.sock REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-c6a6a816-654c-436c-8635-6ecd97d1cd79.sock PWD=/workspaces/ece353-labs/vms VSCODE_GIT_ASKPASS_NODE=/vscode/vscode-server/bin/linux-x64/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/node HOME=/home/vscode LANG=en_US.UTF-8 LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:' REMOTE_CONTAINERS=true GIT_ASKPASS=/vscode/vscode-server/bin/linux-x64/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/extensions/git/dist/askpass.sh VSCODE_GIT_ASKPASS_EXTRA_ARGS='' LESSCLOSE='/usr/bin/lesspipe %s %s' TERM=xterm-256color REMOTE_CONTAINERS_SOCKETS='["/tmp/vscode-ssh-auth-c6a6a816-654c-436c-8635-6ecd97d1cd79.sock","/home/vscode/.gnupg/S.gpg-agent"]' LESSOPEN='| /usr/bin/lesspipe %s' USER=vscode VSCODE_GIT_IPC_HANDLE=/tmp/vscode-git-d1dce5a871.sock SHLVL=2 PROMPT_DIRTRIM=4 VSCODE_GIT_ASKPASS_MAIN=/vscode/vscode-server/bin/linux-x64/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/extensions/git/dist/askpass-main.js BROWSER=/vscode/vscode-server/bin/linux-x64/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/bin/helpers/browser.sh PATH=/vscode/vscode-server/bin/linux-x64/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vscode/.local/bin TERM_PROGRAM=vscode VSCODE_IPC_HOOK_CLI=/tmp/vscode-ipc-d6569cc4-9b1a-4019-8592-8bd59d0d1b31.sock OLDPWD=/workspaces/ece353-labs _=/usr/bin/meson 
+
+ 1/14 copy-1 OK              0.19s
+22:23:35 MALLOC_PERTURB_=79 /workspaces/ece353-labs/vms/build/tests/copy-1
+----------------------------------- output -----------------------------------
+------------------------------------------------------------------------------
+
+ 2/14 copy-2 OK              0.17s
+22:23:35 MALLOC_PERTURB_=129 /workspaces/ece353-labs/vms/build/tests/copy-2
+----------------------------------- output -----------------------------------
+------------------------------------------------------------------------------
+
+ 3/14 copy-3 OK              0.16s
+22:23:35 MALLOC_PERTURB_=188 /workspaces/ece353-labs/vms/build/tests/copy-3
+----------------------------------- output -----------------------------------
+Fatal page fault!
+  Virtual address: 0xABF321
+  Page table: 0x7FE32E63E000
+  Level: 0
+  PTE:
+    PPN: 0x7FE32E642
+    Flags: --RV
+------------------------------------------------------------------------------
+
+ 4/14 copy-4 OK              0.14s
+22:23:35 MALLOC_PERTURB_=148 /workspaces/ece353-labs/vms/build/tests/copy-4
+----------------------------------- output -----------------------------------
+------------------------------------------------------------------------------
+
+ 5/14 copy-5 OK              0.13s
+22:23:35 MALLOC_PERTURB_=208 /workspaces/ece353-labs/vms/build/tests/copy-5
+----------------------------------- output -----------------------------------
+Fatal page fault!
+  Virtual address: 0xABB123
+  Page table: 0x7FD829838000
+  Level: 0
+  PTE:
+    PPN: 0x0
+    Flags: ----
+------------------------------------------------------------------------------
+
+ 6/14 cow-1  OK              0.12s
+22:23:35 MALLOC_PERTURB_=109 /workspaces/ece353-labs/vms/build/tests/cow-1
+----------------------------------- output -----------------------------------
+------------------------------------------------------------------------------
+
+ 7/14 cow-2  OK              0.11s
+22:23:35 MALLOC_PERTURB_=116 /workspaces/ece353-labs/vms/build/tests/cow-2
+----------------------------------- output -----------------------------------
+------------------------------------------------------------------------------
+
+ 8/14 cow-3  OK              0.10s
+22:23:35 MALLOC_PERTURB_=27 /workspaces/ece353-labs/vms/build/tests/cow-3
+----------------------------------- output -----------------------------------
+Fatal page fault!
+  Virtual address: 0xABF321
+  Page table: 0x7EFDD6057000
+  Level: 0
+  PTE:
+    PPN: 0x7EFDD6054
+    Flags: --RV
+------------------------------------------------------------------------------
+
+ 9/14 cow-4  OK              0.09s
+22:23:35 MALLOC_PERTURB_=61 /workspaces/ece353-labs/vms/build/tests/cow-4
+----------------------------------- output -----------------------------------
+------------------------------------------------------------------------------
+
+10/14 cow-5  OK              0.08s
+22:23:35 MALLOC_PERTURB_=148 /workspaces/ece353-labs/vms/build/tests/cow-5
+----------------------------------- output -----------------------------------
+------------------------------------------------------------------------------
+
+11/14 cow-6  OK              0.06s
+22:23:35 MALLOC_PERTURB_=137 /workspaces/ece353-labs/vms/build/tests/cow-6
+----------------------------------- output -----------------------------------
+------------------------------------------------------------------------------
+
+12/14 cow-7  OK              0.05s
+22:23:35 MALLOC_PERTURB_=219 /workspaces/ece353-labs/vms/build/tests/cow-7
+----------------------------------- output -----------------------------------
+Fatal page fault!
+  Virtual address: 0xABB123
+  Page table: 0x7FCBF21CE000
+  Level: 0
+  PTE:
+    PPN: 0x0
+    Flags: ----
+------------------------------------------------------------------------------
+
+13/14 cow-8  OK              0.04s
+22:23:35 MALLOC_PERTURB_=224 /workspaces/ece353-labs/vms/build/tests/cow-8
+----------------------------------- output -----------------------------------
+------------------------------------------------------------------------------
+
+14/14 cow-9  OK              0.03s
+22:23:35 MALLOC_PERTURB_=109 /workspaces/ece353-labs/vms/build/tests/cow-9
+----------------------------------- output -----------------------------------
+------------------------------------------------------------------------------
+
+
+
+Ok:                 14  
+Expected Fail:      0   
+Fail:               0   
+Unexpected Pass:    0   
+Skipped:            0   
+Timeout:            0   

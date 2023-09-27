@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites tests="16" errors="0" failures="0"><testsuite name="wut" tests="16" errors="0" failures="0" skipped="0" time="0.07335329055786133"><testcase name="main-thread-is-0" classname="wut" time="0.07335329055786133"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="first-thread-is-1" classname="wut" time="0.06861257553100586"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+in main cleanup
+wut_exit: go to next thread
+exit clean for id: 0
+thread 1 exiting
+wut_exit: cur thread is final thread
+exit clean for id: 1</system-out></testcase><testcase name="main-thread-yields" classname="wut" time="0.06406140327453613"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_yield setup success
+in main cleanup
+wut_exit: go to next thread
+exit clean for id: 1</system-out></testcase><testcase name="first-thread-exits-explicitly" classname="wut" time="0.05988025665283203"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_yield setup success
+wut_exit: go to next thread
+exit clean for id: 1
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="first-thread-exits-implicitly" classname="wut" time="0.05599617958068848"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_yield setup success
+thread 1 exiting
+wut_exit: go to next thread
+exit clean for id: 1
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="first-thread-runs" classname="wut" time="0.05238199234008789"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_yield setup success
+thread 1 exiting
+wut_exit: go to next thread
+exit clean for id: 1
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="main-thread-joins" classname="wut" time="0.04857373237609863"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+thread 1 exiting
+cur_id: 1, join_caller_id: 0
+wut_exit: cur thread joined on
+join_clean thread
+Queue: 0
+done join
+returned to join
+Queue: 0
+next id: 0
+join status: 0
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="first-thread-cancelled" classname="wut" time="0.04446816444396973"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_cancel success: id: 1
+no available threads
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="thread-in-thread" classname="wut" time="0.040426015853881836"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_yield setup success
+wut_create success: Inserted id: 2
+thread 1 exiting
+wut_exit: go to next thread
+exit clean for id: 1
+wut_yield setup success
+thread 2 exiting
+wut_exit: go to next thread
+exit clean for id: 2
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="two-threads" classname="wut" time="0.03806662559509277"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_create success: Inserted id: 2
+wut_yield setup success
+thread 1 exiting
+wut_exit: go to next thread
+exit clean for id: 1
+thread 2 exiting
+wut_exit: go to next thread
+exit clean for id: 2
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="reuse-thread-0" classname="wut" time="0.035481929779052734"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_yield setup success
+cur_id: 0, join_caller_id: 1
+wut_exit: cur thread joined on
+join_clean thread
+Queue: 1
+done join
+returned to join
+Queue: 1
+next id: 1
+join status: 0
+index: 2
+lowest_id = 2
+highest_id = 2
+wut_create success: Inserted id: 0
+thread 0 exiting
+cur_id: 0, join_caller_id: 1
+wut_exit: cur thread joined on
+join_clean thread
+Queue: 1
+done join
+returned to join
+Queue: 1
+next id: 1
+join status: 0
+thread 1 exiting
+wut_exit: cur thread is final thread
+exit clean for id: 1
+in main cleanup</system-out></testcase><testcase name="error-thread-join-self" classname="wut" time="0.03190016746520996"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_join id 0 error: cannot wait on self
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="error-thread-yield-none" classname="wut" time="0.02825140953063965"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+no available threads
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="rishabh2050" classname="wut" time="0.024943828582763672"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_create success: Inserted id: 2
+thread 1 exiting
+cur_id: 1, join_caller_id: 0
+wut_exit: cur thread joined on
+join_clean thread
+Queue: 2 0
+done join
+returned to join
+Queue: 2 0
+next id: 2
+wut_create success: Inserted id: 3
+join status: 0
+wut_yield setup success
+thread 3 exiting
+cur_id: 3, join_caller_id: 2
+wut_exit: cur thread joined on
+join_clean thread
+Queue: 0 2
+done join
+returned to join
+Queue: 0 2
+next id: 0
+wut_yield setup success
+join status: 0
+thread 2 exiting
+wut_exit: go to next thread
+exit clean for id: 2
+in main cleanup
+wut_exit: cur thread is final thread
+exit clean for id: 0</system-out></testcase><testcase name="rosiepie-1" classname="wut" time="0.021280288696289062"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_create success: Inserted id: 2
+wut_cancel success: id: 0
+wut_join id 0: cleaning-up canceled/exited thread
+index: 2
+index: 3
+lowest_id = 3
+highest_id = 3
+wut_create success: Inserted id: 0
+thread 2 exiting
+cur_id: 2, join_caller_id: 1
+wut_exit: cur thread joined on
+join_clean thread
+Queue: 0 1
+done join
+returned to join
+Queue: 0 1
+next id: 0
+thread 0 exiting
+wut_exit: go to next thread
+exit clean for id: 0
+join status: 0
+thread 1 exiting
+wut_exit: cur thread is final thread
+exit clean for id: 1
+in main cleanup</system-out></testcase><testcase name="rosiepie-2" classname="wut" time="0.016005277633666992"><system-out>wut_create success: Inserted id: 0
+wut_init sucess
+wut_create success: Inserted id: 1
+wut_create success: Inserted id: 2
+wut_create success: Inserted id: 3
+wut_cancel success: id: 2
+wut_cancel success: id: 1
+wut_join id 2: cleaning-up canceled/exited thread
+wut_join id 1: cleaning-up canceled/exited thread
+lowest_id = 2
+wut_create success: Inserted id: 1
+in main cleanup
+wut_exit: go to next thread
+exit clean for id: 0
+thread 3 exiting
+wut_exit: go to next thread
+exit clean for id: 3
+thread 1 exiting
+wut_exit: cur thread is final thread
+exit clean for id: 1</system-out></testcase></testsuite></testsuites>

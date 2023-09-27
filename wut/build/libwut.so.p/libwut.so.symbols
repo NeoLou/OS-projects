@@ -1,0 +1,8 @@
+ 0x000000000000000e (SONAME)             Library soname: [libwut.so]
+wut_cancel T
+wut_create T
+wut_exit T
+wut_id T
+wut_init T
+wut_join T
+wut_yield T
